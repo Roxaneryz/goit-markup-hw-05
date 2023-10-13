@@ -72,8 +72,8 @@ span {
 }
 
 .hover-focus:hover,
-.hover-focus:focus  {
-  color:#404bbf;
+.hover-focus:focus {
+  color: #404bbf;
 }
 
 .header-menu {
@@ -86,7 +86,7 @@ span {
   left: 0;
   bottom: -1px;
   height: 4px;
-  width:100%;
+  width: 100%;
   background-color: #404bbf;
   border-radius: 2px;
 }
@@ -103,9 +103,8 @@ span {
   display: block;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   position: relative;
-  
 }
-.header-menu-item.point-line{
+.header-menu-item.point-line {
   color: #404bbf;
 }
 
@@ -302,7 +301,6 @@ span {
   width: 40px;
   height: 40px;
   margin-top: 8px;
-  
 }
 .social-link-icon {
   width: 100%;
@@ -351,7 +349,6 @@ span {
 }
 .portfolio-list-item {
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  
 }
 
 .portfolio-list-item:hover {
@@ -361,8 +358,8 @@ span {
 
 .portfolio-list-item:nth-child(1n + 3) {
   margin-bottom: 0;
-}*/
-.portfolio-list-title {
+}
+*/ .portfolio-list-title {
   color: var(--NAVY-BLUE, #2e2f42);
   font-size: 20px;
   font-style: normal;
@@ -474,24 +471,60 @@ span {
 }
 /*========== /FOOTER =======*/
 
-
-.backdrop{
-  position:fixed;
-  top:0;
+.backdrop {
+  position: fixed;
+  top: 0;
   width: 100%;
-  height:100%;
+  height: 100%;
   background-color: rgba(34, 35, 44, 0.467);
+}
+.modal {
+  width: 408px;
+  min-height: 584px;
+  border-radius: 4px;
+  background-color: #fcfcfc;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 72px 24px 24px 24px;
+  
+}
+.modal-btn-icon{
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  padding: 0;
 
 }
-.modal{
+.modal-btn-icon:hover, .modal-btn-icon:focus{
+  fill: #ffffff;
+}
 
-  width: 408px;
-height: 584px;
-border-radius: 4px;
-background-color: #FCFCFC;
-position: absolute;
-top: 50%;
-left: 50%;
-transform: translate(-50%, -50%);
-padding: 40px;
+.modal-btn {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  top: 24px;
+  right: 24px;
+  background-color: #e7e9fc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.modal-btn:hover, .modal-btn:focus{
+  background-color: #404bbf;
+  border: none;
+}
+.modal-title{
+  margin-bottom: 16px;
+  font-weight: 500;
+  font-size: 16px; 
+  letter-spacing: 0.02em;
+  text-align: center;
+  color:#2E2F42;
+  
 }
