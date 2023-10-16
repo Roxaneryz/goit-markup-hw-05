@@ -630,7 +630,7 @@ span {
   position: relative;
 }
 
-.input:focus-within .form-icon {
+.input:focus-within.form-icon {
   fill: #4d5ae5;
 }
 
